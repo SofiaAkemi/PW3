@@ -9,7 +9,54 @@
 </head>
 <body>
     <div id="container">
+        <form action="" id="formulario">
+            <table>
+                <tr>
+                    <td>
+                        <label>Número 1</label><br>
+                        <input type="number" id="n1"> <br>
+                    </td>
+                    <td>
+                        <label>Número 2</label><br>
+                        <input type="number" id="n2"> <br>
+                    </td>
+                    <td>
+                        <label>Número 3</label><br>
+                        <input type="number" id="n3"> <br>
+                    </td>
+                    <td>
+                        <label>Número 4</label><br>
+                        <input type="number" id="n4"> <br>
+                    </td>
+                </tr>
+            </table>
 
+            <br>
+            <label>Operação</label>
+            <br>
+            <select id="operacao">
+                <option value="dobro">Dobro (do número 1)</option>
+                <option value="triplo">Triplo (do número 1)</option>
+                <option value="quadruplo">Quádruplo (do número 1)</option>
+                <option value="quintuplo">Quíntuplo (do número 1)</option>
+                <option value="sextuplo">Sêxtuplo (do número 1)</option>
+                <option value="quadrado">Quadrado (do número 1)</option>
+                <option value="cubo">Cubo (do número 1)</option>
+                <option value="quarta">Quarta potência (do número 1)</option>
+                <option value="quinta">Quinta potência (do número 1)</option>
+                <option value="sexta">Sexta potência (do número 1)</option>
+                <option value="baskara">Báskara</option>
+                <option value="media">Média dos 4 números</option>
+                <option value="imparpar">Verificar se é ímpar ou par (o número 1)</option>
+            </select>
+
+            <br><br>
+            <button type="submit" id="calcular" onclick="calcularFuncao()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
