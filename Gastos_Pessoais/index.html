@@ -15,31 +15,31 @@
 
         <form action="" id="formulario">
             <table>
-                <tr class="adicionarGastoLayout">
+                <tr>
                     <td>
                         <label>Descrição</label><br>
                         <input type="text" id="desc"><br>
                     </td>
                     <td>
                         <label>Valor</label><br>
-                        <input type="number" id="val"><br>
-                    </td>
-                    <td>
-                        <label>Categoria</label><br>
-                        <select id="cat">
-                            <option value="alimentacao">Alimentação</option>
-                            <option value="lazer">Lazer</option>
-                            <option value="transporte">Transporte</option>
-                            <option value="saude">Saúde</option>
-                            <option value="trabalho">Trabalho</option>
-                            <option value="escola">Escola</option>
-                            <option value="assinatura">Assinatura</option>
-                            <option value="contas">Contas</option>
-                            <option value="contas">Outro</option>
-                        </select>
+                        <input type="number" id="val"> <br>
                     </td>
                 </tr>
             </table>
+
+            <label>Operação</label>
+            <br>
+            <select id="cat">
+                <option value="alimentacao">Alimentação</option>
+                <option value="lazer">Lazer</option>
+                <option value="transporte">Transporte</option>
+                <option value="saude">Saúde</option>
+                <option value="trabalho">Trabalho</option>
+                <option value="escola">Escola</option>
+                <option value="assinatura">Assinatura</option>
+                <option value="contas">Contas</option>
+                <option value="contas">Outro</option>
+            </select>
 
             <br><br>
             <button type="submit" id="adicionar" onclick="adicionarGasto()">Adicionar Gasto</button>

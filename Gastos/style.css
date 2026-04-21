@@ -1,0 +1,4 @@
+.adicionarGastoLayout {
+    display: flex;
+    flex-direction: column;
+}
