@@ -13,9 +13,9 @@
 
         <h2>Adicionar Gasto</h2>
 
-        <form action="" id="formulario">
+        <form action="" id="formGasto">
             <table>
-                <tr class="adicionarGastoLayout">
+                <tr id="adicionarGastoLayout">
                     <td>
                         <label>Descrição</label><br>
                         <input type="text" id="desc"><br>
@@ -34,8 +34,8 @@
                             <option value="trabalho">Trabalho</option>
                             <option value="escola">Escola</option>
                             <option value="assinatura">Assinatura</option>
-                            <option value="contas">Contas</option>
-                            <option value="outros">Outro</option>
+                            <option value="conta">Conta</option>
+                            <option value="outro">Outro</option>
                         </select>
                     </td>
                 </tr>
@@ -49,7 +49,13 @@
     <hr>
 
     <div id="container2">
-        <div id="ttl"></div>
+        <div id="ttl">AQUI SÓ VAI FICAR O VALOR GASTO</div>
+    </div>
+
+    <div id="container3">
+        <h1>Lista de Gastos</h1>
+
+        <div id="resultado"></div>
     </div>
 
     <script src="script.js"></script>
