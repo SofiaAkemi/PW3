@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container1">
+    <div id="ptAdicionarGastos">
         <h1>Meus Gastos Pessoais</h1>
 
         <h2>Adicionar Gasto</h2>
@@ -22,11 +22,11 @@
                     </td>
                     <td>
                         <label>Valor</label><br>
-                        <input type="number" id="val"><br>
+                        <input type="number" id="val" step="0.01"><br>
                     </td>
                     <td>
                         <label>Categoria</label><br>
-                        <select id="cat">
+                        <select id="categoria">
                             <option value="alimentacao">Alimentação</option>
                             <option value="lazer">Lazer</option>
                             <option value="transporte">Transporte</option>
@@ -48,14 +48,33 @@
 
     <hr>
 
-    <div id="container2">
-        <div id="ttl">AQUI SÓ VAI FICAR O VALOR GASTO</div>
+    <div id="ptTotalGasto">
+        <h1>Total Gasto</h1>
+
+        <div id="ttl">R$0,00</div>
     </div>
 
-    <div id="container3">
+    <hr>
+
+    <div id="ptListaGastos">
         <h1>Lista de Gastos</h1>
 
-        <div id="resultado"></div>
+        <h2>Filtrar por Categoria</h2>
+
+        <select onchange="filtrarGastos(this.value)">
+            <option value="todos">Todos</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="lazer">Lazer</option>
+            <option value="transporte">Transporte</option>
+            <option value="saude">Saúde</option>
+            <option value="trabalho">Trabalho</option>
+            <option value="escola">Escola</option>
+            <option value="assinatura">Assinatura</option>
+            <option value="conta">Conta</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <div id="gastosLayout"></div>
     </div>
 
     <script src="script.js"></script>
