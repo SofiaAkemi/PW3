@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Parte para Adicionar os Gastos-->
     <div id="ptAdicionarGastos">
         <h1>Meus Gastos Pessoais</h1>
 
         <h2>Adicionar Gasto</h2>
 
+        <!--Formulário-->
         <form action="" id="formGasto">
             <table>
                 <tr id="adicionarGastoLayout">
-                    <td>
+                    <td> <!--Descrição do Gasto-->
                         <label>Descrição</label><br>
                         <input type="text" id="desc"><br>
                     </td>
-                    <td>
+                    <td> <!--Valor do Gasto-->
                         <label>Valor</label><br>
-                        <input type="number" id="val" step="0.01"><br>
+                        <input type="text" id="val" step="0.01"><br>
                     </td>
-                    <td>
+                    <td> <!--Categoria do Gasto-->
                         <label>Categoria</label><br>
                         <select id="categoria">
                             <option value="alimentacao">Alimentação</option>
@@ -41,26 +43,28 @@
                 </tr>
             </table>
 
-            <br><br>
-            <button type="submit" id="adicionar"">Adicionar Gasto</button>
+            <br> <!--Botão para Enviar Formulário-->
+            <button type="submit">Adicionar Gasto</button>
         </form>
     </div>
 
-    <hr>
+    <hr> <!--Divisão-->
 
+    <!--Parte para Ver o Total Gasto-->
     <div id="ptTotalGasto">
-        <h1>Total Gasto</h1>
+        <h2>Total Gasto</h2>
 
         <div id="ttl">R$0,00</div>
     </div>
 
-    <hr>
+    <hr> <!--Divisão-->
 
+    <!--Parte para Ver Todos os Gastos-->
     <div id="ptListaGastos">
-        <h1>Lista de Gastos</h1>
+        <h2>Lista de Gastos</h2>
 
-        <h2>Filtrar por Categoria</h2>
-
+        <!--Filtro-->
+        <label>Filtrar por Categoria:</label>
         <select onchange="filtrarGastos(this.value)">
             <option value="todos">Todos</option>
             <option value="alimentacao">Alimentação</option>
@@ -74,9 +78,11 @@
             <option value="outro">Outro</option>
         </select>
 
+        <!--Lista-->
         <div id="gastosLayout"></div>
     </div>
 
+    <!--Conexão com o Script-->
     <script src="script.js"></script>
 </body>
 </html>
