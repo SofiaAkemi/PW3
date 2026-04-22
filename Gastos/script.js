@@ -1,3 +1,16 @@
+//Nome das categorias
+const categoriasNome = {
+    alimentacao: "Alimentação",
+    lazer: "Lazer",
+    transporte: "Transporte",
+    saude: "Saúde",
+    trabalho: "Trabalho",
+    escola: "Escola",
+    assinatura: "Assinatura",
+    conta: "Conta",
+    outro: "Outro"
+};
+
 //Array para armazenar os gastos
 let gastos = [];
 
@@ -46,7 +59,12 @@ function renderizarTela(lista = gastos){
 
     lista.forEach((gasto, index) => {
         const gastoNaLista = document.createElement("div"); //Cria um div para cada gasto
-        gastoNaLista.innerHTML = `<p>${descricao}<br>R$${valor}<br>${categoria}</p>`; //Conteúdo
+        gastoNaLista.innerHTML =
+        `<p>${gasto.descricao}<br>
+         R$${gasto.valor.toFixed(2)}<br>
+         ${categoriasNome[gasto.categoria]}<br>
+         <button onClick="removerGasto(${index})">Remover Gasto</button>
+        </p>`; //Conteúdo
         ptListaGastos.appendChild(gastoNaLista); //Põe o gasto na tela
     });
     //O forEach pega: (gasto(ou seja, o elemento), index(posição no array))
@@ -62,7 +80,7 @@ function removerGasto(index){
 }
 
 //Filtrando os gastos
-function filtrarGastos(){
+function filtrarGastos(categoria){
     let gastosFiltrados = []; //Array para os gastos filtrados
 
     //A estrutura switch
@@ -101,7 +119,7 @@ document.getElementById("formGasto").addEventListener("submit", function(event) 
     //Pegando dados do formuário
     const desc = document.getElementById("desc").value;
     let val = document.getElementById("val").value;
-    const categoria = document.getElementById("cat").value;
+    const categoria = document.getElementById("categoria").value;
 
     val = Number(val.replace(",", ".")); //Troca , por . e define a variável como número
 
