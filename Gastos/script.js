@@ -49,7 +49,7 @@ function calcularTotalGasto(){
     });
     //Verifica o valor de cada gasto para somar um a um
 
-    document.getElementById("ttl").innerHTML = "O Valor Total Gasto é: R$" + total.toFixed(2); //Joga isso na tela
+    document.getElementById("ttl").innerHTML = "<label>O Valor Total Gasto é:<label> R$" + total.toFixed(2); //Joga isso na tela
 }
 
 //Atualizando a tela
