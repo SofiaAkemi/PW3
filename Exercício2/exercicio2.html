@@ -10,7 +10,7 @@
 <body>
     <h1>Controle de Vendas</h1>
     <hr>
-    <form>
+    <form action="" id="formulario">
         <div class="linha-principal">
             <div class="coluna1">
                 <div class="linha-produto">
@@ -27,7 +27,7 @@
                         <label for="bCh">Bolo de Chocolate</label>
                     </div>
                     <div class="preco"><label>R$20,00</label></div>
-                    <div class="quantidade"><input type="number" id="bChQt"></div>
+                    <div class="quantidade"><input type="number" id="bChQt" disabled></div>
                 </div>
 
                 <div class="linha-produto">
@@ -36,7 +36,7 @@
                         <label for="bBa">Bolo de Baunilha</label>
                     </div>
                     <div class="preco"><label>R$20,00</label></div>
-                    <div class="quantidade"><input type="number" id="bBaQt"></div>
+                    <div class="quantidade"><input type="number" id="bBaQt" disabled></div>
                 </div>
 
                 <div class="linha-produto">
@@ -45,7 +45,7 @@
                         <label for="bCe">Bolo de Cenoura</label>
                     </div>
                     <div class="preco"><label>R$30,00</label></div>
-                    <div class="quantidade"><input type="number" id="bCeQt"></div>
+                    <div class="quantidade"><input type="number" id="bCeQt" disabled></div>
                 </div>
 
                 <div class="linha-produto">
@@ -54,7 +54,7 @@
                         <label for="bFo">Bolo Formigueiro</label>
                     </div>
                     <div class="preco"><label>R$25,00</label></div>
-                    <div class="quantidade"><input type="number" id="bFoQt"></div>
+                    <div class="quantidade"><input type="number" id="bFoQt" disabled></div>
                 </div>
 
                 <div class="linha-produto">
@@ -63,7 +63,7 @@
                         <label for="bMi">Bolo de Milho</label>
                     </div>
                     <div class="preco"><label>R$30,00</label></div>
-                    <div class="quantidade"><input type="number" id="bMiQt"></div>
+                    <div class="quantidade"><input type="number" id="bMiQt" disabled></div>
                 </div>
 
                 <div class="linha-produto">
@@ -72,7 +72,7 @@
                         <label for="bLa">Bolo de Laranja</label>
                     </div>
                     <div class="preco"><label>R$30,00</label></div>
-                    <div class="quantidade"><input type="number" id="bLaQt"></div>
+                    <div class="quantidade"><input type="number" id="bLaQt" disabled></div>
                 </div>
 
 
@@ -82,7 +82,7 @@
                         <label for="bPa">Bolo de Paçoca</label>
                     </div>
                     <div class="preco"><label>R$40,00</label></div>
-                    <div class="quantidade"><input type="number" id="bPaQt"></div>
+                    <div class="quantidade"><input type="number" id="bPaQt" disabled></div>
                 </div>
             </div>
             <div class="coluna2">
@@ -91,21 +91,21 @@
                 <div class="espaco"></div>
 
                 <div class="opcao">
-                    <input type="radio" id="cre" name="credito" value="Crédito">
+                    <input type="radio" id="cre" name="pagamento" value="Crédito">
                     <label for="cre">Crédito</label>
                 </div>
                 <div class="opcao">
-                    <input type="radio" id="avi" name="avista" value="À Vista">
+                    <input type="radio" id="avi" name="pagamento" value="À Vista">
                     <label for="avi">À Vista</label>
                 </div>
 
                 <div class="parte">
                     <label>Quantidade de parcelas: </label>
                     <select id="parcelas">
-                        <option value="2p">2</option>
-                        <option value="3p">3</option>
-                        <option value="4p">4</option>
-                        <option value="50">5</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </div>
 
@@ -113,9 +113,10 @@
                 <button type="submit">Calcular Lucro</button>
                 </div>
 
-                <div id="lucro">O lucro é de R$0,00.</div>
+                <div id="lucro">Resultado: R$0,00</div>
             </div>
         </div>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
