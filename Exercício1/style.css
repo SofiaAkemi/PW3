@@ -1,3 +1,55 @@
-#container {
-    
+* {
+    background-color: rgb(255, 209, 218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contas {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+}
+
+input {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ff708d;
+    border-width: 2px;
+    background-color: white;
+    margin-top: 5px;
+    height: 23px;
+}
+
+select {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ff708d;
+    border-width: 2px;
+    background-color: white;
+    margin-top: 5px;
+    height: 30px;
+}
+
+button {
+    border-style: solid;
+    border-color: #ff234f;
+    border-radius: 5px;
+    background-color: #ff234f;
+    margin-top: 50px;
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label {
+    color: #ff234f;
+    font-weight: bold;
+}
+
+h1 {
+    color: #d40932;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px
 }
