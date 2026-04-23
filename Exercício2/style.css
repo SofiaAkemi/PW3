@@ -1,0 +1,20 @@
+.linha-principal {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.finalizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha-produto {
+    display: flex;
+    flex-direction: row;
+}
