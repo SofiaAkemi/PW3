@@ -11,7 +11,7 @@ if (isset($_SESSION['usuario_id'])) {
     exit;
 }
 
-require_once('../../config/database.php');
+require_once('backend/database.php');
 
 $erro = '';
 $usuario_bloqueado = false;

@@ -42,14 +42,14 @@ function verificar_autenticacao() {
     session_start();
     
     if (!isset($_SESSION['usuario_id'])) {
-        header('Location: ../frontend/pages/login.php');
+        header('Location: ../login.php');
         exit;
     }
     
     // Verificar se é o primeiro acesso
     if (isset($_SESSION['primeiro_acesso']) && $_SESSION['primeiro_acesso'] == true) {
         if ($_SERVER['REQUEST_URI'] !== '/frontend/pages/alterar_senha.php') {
-            header('Location: ../frontend/pages/alterar_senha.php?primeiro_acesso=true');
+            header('Location: ../telas/alterar_senha.php?primeiro_acesso=true');
             exit;
         }
     }

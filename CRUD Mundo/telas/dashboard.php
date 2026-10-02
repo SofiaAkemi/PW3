@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../../config/database.php');
+require_once('../../backend/database.php');
 
 // Verificar autenticação
 if (!isset($_SESSION['usuario_id'])) {
@@ -50,7 +50,7 @@ if ($resultado_logs) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALD - Dashboard</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <div class="layout">

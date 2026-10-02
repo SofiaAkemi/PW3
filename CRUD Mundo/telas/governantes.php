@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../../config/database.php');
+require_once('../../backend/database.php');
 
 if (!isset($_SESSION['usuario_id'])) {
     header('Location: login.php');
@@ -131,8 +131,7 @@ if ($resultado) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALD - Governantes</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="../../style.css"></head>
 <body>
     <div class="layout">
         <aside class="sidebar">

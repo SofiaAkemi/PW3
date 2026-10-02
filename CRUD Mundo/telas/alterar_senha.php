@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../../config/database.php');
+require_once('../backend/database.php');
 
 // Verificar autenticação
 if (!isset($_SESSION['usuario_id'])) {
