@@ -9,7 +9,7 @@ Um projeto que permite o gerenciamento de informações geográficas, envolvendo
 | **Categoria** | **Tecnologia** |
 |------------|------------|
 | Backend | PHP |
-| Frontend | HTML5, CSS3 |
+| Frontend | HTML5, CSS3, JavaScript |
 | IDE | Visual Studio Code|
 | SGBD | MySql |
 | Ambiente de Desenvolvimento | XAMPP |
