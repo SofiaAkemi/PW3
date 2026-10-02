@@ -1,17 +1,8 @@
-<h1><b>PW3</b></h1>
+<h1><b>CRUD MUNDO</b></h1>
 
-<h2><b>Sobre o repositório</b></h2>
+<h2><b>Sobre o projeto</b></h2>
 
-Um repositório para **armazenar, versionar e apresentar** os projetos realizados ao longo do ano de 2026 pela aluna Sofia Kucinskis para a matéria de **Programação Web 3**.
-
-<h2><b>Projetos</b></h2>
-
-- CRUD Mundo
-- Exercício 1
-- Exercício 2
-- Exercício 3 - Gerenciamento Escolar
-- Gastos
-- Portfólio
+Um projeto que permite o gerenciamento de informações geográficas, envolvendo o cadastro, consulta e associação de continentes, países, cidades e seus governantes.
 
 <h2><b>Tenologias utilizadas</b></h2>
 
@@ -23,11 +14,30 @@ Um repositório para **armazenar, versionar e apresentar** os projetos realizado
 | SGBD | MySql |
 | Ambiente de Desenvolvimento | XAMPP |
 
-<h2><b>Estrutura do repositório</b></h2>
+<h2><b>Funcionalidades do projeto</b></h2>
 
-Pastas separadas para cada projeto contendo pastas dentro desses projetos separando seus arquivos e mantendo a organização do repositório.
+- CRUD Mundo
+- Exercício 1
+- Exercício 2
+- Exercício 3 - Gerenciamento Escolar
+- Gastos
+- Portfólio
 
-<h2><b>Para testar os projetos (XAMPP)</b></h2>
+<h2><b>Estrutura do projeto</b></h2>
+
+projeto/
+├── assets/S
+├── components/
+├── pages/
+├── services/
+├── database/
+├── docs/
+├── src/
+├── README.md
+├── .gitignore
+└── arquivos de configuração
+
+<h2><b>Para testar o projeto (XAMPP)</b></h2>
 
 1. Clone o repositório:
 
