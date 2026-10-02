@@ -9,33 +9,44 @@ Um projeto que permite o gerenciamento de informações geográficas, envolvendo
 | **Categoria** | **Tecnologia** |
 |------------|------------|
 | Backend | PHP |
-| Frontend | HTML, CSS |
+| Frontend | HTML5, CSS3 |
 | IDE | Visual Studio Code|
 | SGBD | MySql |
 | Ambiente de Desenvolvimento | XAMPP |
+| Plataforma de Hospedagem | GitHub |
 
 <h2><b>Funcionalidades do projeto</b></h2>
 
-- CRUD Mundo
-- Exercício 1
-- Exercício 2
-- Exercício 3 - Gerenciamento Escolar
-- Gastos
-- Portfólio
+- Cadastro de países + Associação a cidades
+- Cadastro de países + Seus governantes
+- Cadastro de cidades + Seus governantes
+- Editar os dados de continentes, países, cidades e governantes
+- Exclusão de registros
 
 <h2><b>Estrutura do projeto</b></h2>
 
-projeto/
-├── assets/S
-├── components/
-├── pages/
-├── services/
-├── database/
-├── docs/
-├── src/
-├── README.md
-├── .gitignore
-└── arquivos de configuração
+```text
+PW3
+│
+├── CRUD Mundo/
+  │
+  ├── backend/
+     ├── database.php/
+  ├── bancodedados/
+     ├── bd_mundo.sql/
+  ├── telas/
+     ├── alterar_senha.php/
+     ├── cidades.php/
+     ├── continentes.php/
+     ├── dashboard.php/
+     ├── governantes.php/
+     ├── paises.php/
+  │
+  ├── login.php
+  ├── logout.php
+  ├── style.css
+  └── README.md
+```
 
 <h2><b>Para testar o projeto (XAMPP)</b></h2>
 
@@ -56,11 +67,11 @@ C:\xampp\htdocs\PW3
 4. Abra o navegador e acesse:
 
 ```text
-http://localhost/PW3
+http://localhost/PW3/CRUD%20MundoS
 ```
 
-5. Importe os arquivo `.sql` nas pastas `database`/`bancodedados` nos projetos a partir do **phpMyAdmin** ou **SQLWorkbench** e configure as credenciais de acesso conforme necessário.
+5. Importe o arquivo `.sql` na pasta `bancodedados` no projeto a partir do **phpMyAdmin** ou **MySQL Workbench** e configure as credenciais de acesso conforme necessário.
 
 <h2><b>Autora</b></h2>
 
-**Sofia Akemi Arakaki Kucinskis**
+**Sofia Akemi Arakaki Kucinskis.**
