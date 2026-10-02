@@ -53,10 +53,4 @@ http://localhost/PW3
 
 <h2><b>Autora</b></h2>
 
-Sofia Akemi Arakaki Kucinskis
-
-Este projeto foi desenvolvido para fins acadêmicos como Trabalho de Conclusão de Curso da **ETEC Prof.ª Ilza Nascimento Pintus**.
-
-## 📈 Status
-
-🚧 Projeto atualmente em **desenvolvimento**.
+**Sofia Akemi Arakaki Kucinskis**
