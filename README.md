@@ -13,16 +13,6 @@ Um repositório para **armazenar, versionar e apresentar** os projetos realizado
 - Gastos
 - Portfólio
 
-<h2><b>Tenologias utilizadas</b></h2>
-
-| **Categoria** | **Tecnologia** |
-|------------|------------|
-| Backend | PHP |
-| Frontend | HTML, CSS |
-| IDE | Visual Studio Code|
-| SGBD | MySql |
-| Ambiente de Desenvolvimento | XAMPP |
-
 <h2><b>Estrutura do repositório</b></h2>
 
 Pastas separadas para cada projeto contendo pastas dentro desses projetos separando seus arquivos e mantendo a organização do repositório.
@@ -53,4 +43,4 @@ http://localhost/PW3
 
 <h2><b>Autora</b></h2>
 
-**Sofia Akemi Arakaki Kucinskis**
+**Sofia Akemi Arakaki Kucinskis.**
